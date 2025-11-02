@@ -12,11 +12,11 @@
 - Datasheet (URL):
 
 ## 2. Conexões de hardware
-- Tabela indicando as conexõesd entre BitDogLab e sensor:
+- Tabela indicando as conexões entre BitDogLab e sensor:
 - Observações (resistores, alimentação externa, níveis lógicos):
 
-**Esquema de ligação (imagem em `docs/`):**  
-![ligacao](docs/ligacao.jpg)
+**Tabela de conexões (imagem em `docs/`):**  
+![conexoes](docs/conexoes.jpg)
 
 ## 3. Dependências
 - MicroPython/C versão:
