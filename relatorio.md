@@ -58,11 +58,6 @@ Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725
 - Limitação a 8 cores predefinidas na calibração
 - Interpolação HSL menos precisa para cores saturadas
 
-**Evidências:**
-- Montagem física funcional com sensor posicionado adequadamente
-- Capturas demonstrando detecção precisa de azul e vermelho
-- Logs de calibração mostrando intervalos consistentes
-
 ## 4. Dificuldades e Soluções
 
 **Desafio 1: Timing do Barramento I2C**
