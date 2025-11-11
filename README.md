@@ -1,6 +1,6 @@
-# <NOME DO SENSOR> — Sensores na BitDogLab
+# Sensor de Cor GY-33 TCS34725 — Sensores na BitDogLab
 
-**Dupla:** Tiago Silveira Zaparoli (237310 / TZShinobi), Vinicius P. M. Miguel (260731)
+**Dupla:** Tiago Silveira Zaparoli (237310 / TZShinobi), Vinicius P. M. Miguel (260731 / viniciuskant)
 **Turma:** EA801 — 2025S2  
 
 ## 1. Descrição do sensor
@@ -19,11 +19,16 @@
 - Datasheet (URL): [GY-33 CS3472](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf)
 
 ## 2. Conexões de hardware
-- Tabela indicando as conexões entre BitDogLab e sensor: I2C0
-- Observações (resistores, alimentação externa, níveis lógicos): 3V
+- Para realiza a conexão utiliza-se a conexão J6, conforme a tabela:
 
-<!-- **Tabela de conexões (imagem em `docs/`):**  
-![conexoes](docs/conexoes.jpg) -->
+| Pino GY-33 (TCS34725) | BitDogLab (RP2040) | Função                           |
+| --------------------- | ------------------ | -------------------------------- |
+| VIN                   | 3V3                | Alimentação                      |
+| GND                   | GND                | Referência (Ground)              |
+| SDA                   | GP0 (I2C0 SDA)     | Comunicação I2C                  |
+| SCL                   | GP1 (I2C0 SCL)     | Comunicação I2C                  |
+
+- O pino INT de interrupção não é utilizado na implementação.
 
 ## 3. Dependências
 - MicroPython versão: 1.26
