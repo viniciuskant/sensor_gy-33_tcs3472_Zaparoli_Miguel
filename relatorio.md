@@ -1,7 +1,7 @@
 # Relatório Técnico da Dupla
 
 ## 1. Escopo e Objetivos
-Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725 via interface I2C na plataforma BitDogLab (RP2040), com capacidade de calibração interativa e detecção em tempo real de cores predefinidas. O sistema deve permitir a identificação de cores básicas (Vermelho, Verde, Azul, Amarelo, Magenta, Ciano, Branco e Preto) através de dois métodos: comparação com intervalos calibrados e interpolação via espaço de cores HSL para cores não calibradas.
+Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725 via interface I2C na plataforma BitDogLab (RP2040), com capacidade de calibração interativa e detecção em tempo real de cores predefinidas. O sistema deve permitir a identificação de cores básicas (Vermelho, Verde, Azul, Amarelo, Rosa, Magenta, Laranja, Ciano, Branco e Preto) através de dois métodos: comparação com intervalos calibrados e interpolação via espaço de cores HSL para cores não calibradas.
 
 **Critérios de sucesso:**
 - Comunicação I2C estável com o sensor TCS34725 a 100 kHz
@@ -33,7 +33,7 @@ Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725
 
 **Fluxo Lógico:**
 1. Inicialização do sensor e barramento I2C
-2. Rotina de calibração guiada para 8 cores
+2. Rotina de calibração guiada para 10 cores
 3. Leitura contínua dos valores RGB do sensor
 4. Detecção primária por comparação com intervalos calibrados
 5. Detecção secundária por conversão RGB -> HSL e comparação com faixas de matiz
@@ -85,17 +85,13 @@ Implementar um sistema de detecção de cores utilizando o sensor GY-33 TCS34725
 - Plataforma BitDogLab adequada para prototipagem com sensores I2C
 
 **Trabalhos Futuros:**
-- Implementação de algoritmo de machine learning para classificação de cores
 - Expansão para detecção de tons específicos (pastéis, terros, etc.)
 - Sistema de calibração automática baseado em cores de referência
 - Integração com display OLED para feedback visual direto
-- Adaptação para ambiente MicroPython para facilitar prototipagem
-- Desenvolvimento de biblioteca genérica para família de sensores TCS
 
 ## 6. Referências
 
-1. **AMS-TAOS USA** - *TCS34725 Datasheet* - Documentação técnica do sensor de cor
+1. **AMS-TAOS USA** – (*TCS34725 Color Light-to-Digital Converter*)[https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf] - Documentação técnica do sensor de cor
 2. **Raspberry Pi Foundation** - *Pico C/C++ SDK* - Documentação de desenvolvimento
-3. **BitDogLab** - *Pinout and Specifications* - Diagramas e especificações da plataforma
-4. **Wikipedia** - *HSL and HSV Color Models* - Fundamentos teóricos do espaço de cores HSL
-5. **Adafruit Industries** - *TCS34725 Application Notes* - Notas de aplicação e exemplos
+3. **BitDogLab** - (*Esquemático da BitDogLab*)[https://docs.google.com/document/d/1cR74ubS8tIO2sSQk1Hf8aKo57Ta3R8EJL4mGiqV2mH0/edit?usp=sharing] - Diagramas e especificações da plataforma
+4. **Wikipedia** - (*HSL and HSV*)[https://en.wikipedia.org/wiki/HSL_and_HSV] - Fundamentos teóricos do espaço de cores HSL
