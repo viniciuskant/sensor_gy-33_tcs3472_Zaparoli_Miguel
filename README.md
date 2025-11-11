@@ -75,5 +75,17 @@ A seguir um exemplo de montagem e detecção das cores Azul e Vermelho:
 ## 6. Estrutura do Repositório
 
 ```text
+├── LICENSE
+├── README.md
+├── docs
+│   └── diagram.png
+├── relatorio.md
+├── src
+│   ├── CMakeLists.txt
+│   ├── main.c
+│   ├── pico_sdk_import.cmake
+│   ├── tcs34725.c
+│   └── tcs34725.h
+└── test
 
 ```
