@@ -87,5 +87,4 @@ A seguir um exemplo de montagem e detecção das cores Azul e Vermelho:
 │   ├── tcs34725.c
 │   └── tcs34725.h
 └── test
-
 ```
